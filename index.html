@@ -4,52 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Loja de dragões</title>
+    <title>Batalha de Dragões</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/">Loja de dragões</a></li>
-                <li><a href="#">Livros</a></li>
-                <li><a href="#">Eletrônicos</a></li>
-                <li><a href="#">Presentes</a></li>
+                <li><a href="#">BATALHA DE DRAGÕES</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="Dragões">
             <ul class="Dragões__lista">
+                <!-- Dragão Colorido -->
                 <li class="Dragões__item">
                     <div class="Dragões__conteudo">
                         <img src="assets/maindragon.jpg" alt="Dragão colorido">
                         <div class="Dragões__informacoes">
-                                <h3>Dragão colorido</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolor numquam fugit nihil iste, quis ipsum asperiores a accusantium ducimus quia veniam. Qui, saepe necessitatibus ea molestiae consequuntur amet non.</p>
-                                <h4>R$ 200K <s>R$500K</s></h4>
-                                <p>Frete grátis</p>
+                            <h3>Dragão Colorido</h3>
+                            <p>O dragão mais forte do mundo</p>
+                            <h4 class="atributo">
+                                <span>Força:</span>
+                                <span class="valor" id="forca-dragao1">1000</span>
+                                <button class="compare" data-atributo="forca">Comparar</button>
+                            </h4>
+                            <h4 class="atributo">
+                                <span>Ferocidade:</span>
+                                <span class="valor" id="ferocidade-dragao1">150</span>
+                                <button class="compare" data-atributo="ferocidade">Comparar</button>
+                            </h4>
+                            <h4 class="atributo">
+                                <span>Legal:</span>
+                                <span class="valor" id="legal-dragao1">200</span>
+                                <button class="compare" data-atributo="legal">Comparar</button>
+                            </h4>
                         </div>
                     </div>
                 </li>
+                <!-- Imagem VS -->
                 <li class="Dragões__item">
                     <div class="Dragões__conteudo">
-                        <img src="assets/bluedragon.jpg" alt="Dragão colorido">
-                        <div class="Dragões__informacoes">
-                                <h3>Dragão azul</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolor numquam fugit nihil iste, quis ipsum asperiores a accusantium ducimus quia veniam. Qui, saepe necessitatibus ea molestiae consequuntur amet non.</p>
-                                <h4>R$ 200K <s>R$500K</s></h4>
-                                <p>Frete grátis</p>
+                        <img src="assets/Vs.jpg" alt="VS">
+                        <div class="placar">
+                            <h2>Placar</h2>
+                            <p>Dragão Colorido: <span id="pontos-dragao1">0</span></p>
+                            <p>Dragão Todas as Cores: <span id="pontos-dragao2">0</span></p>
                         </div>
                     </div>
                 </li>
+                <!-- Dragão Todas as Cores -->
                 <li class="Dragões__item">
                     <div class="Dragões__conteudo">
-                        <img src="assets/reddragon.jpg" alt="Dragão colorido">
+                        <img src="assets/reddragon.jpg" alt="Dragão Todas as Cores">
                         <div class="Dragões__informacoes">
-                                <h3>Dragão vermelho</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolor numquam fugit nihil iste, quis ipsum asperiores a accusantium ducimus quia veniam. Qui, saepe necessitatibus ea molestiae consequuntur amet non.</p>
-                                <h4>R$ 200K <s>R$500K</s></h4>
-                                <p>Frete grátis</p>
+                            <h3>Dragão Todas as Cores</h3>
+                            <p>O dragão mais legal do mundo</p>
+                            <h4 class="atributo">
+                                <span>Força:</span>
+                                <span class="valor ocultar" id="forca-dragao2" data-valor="220">???</span>
+                            </h4>
+                            <h4 class="atributo">
+                                <span>Ferocidade:</span>
+                                <span class="valor ocultar" id="ferocidade-dragao2" data-valor="80">???</span>
+                            </h4>
+                            <h4 class="atributo">
+                                <span>Legal:</span>
+                                <span class="valor ocultar" id="legal-dragao2" data-valor="1000">???</span>
+                            </h4>
                         </div>
                     </div>
                 </li>
@@ -57,7 +79,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Teste direitos</p>
+        <p>&copy; Davi Marcelino Productions</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-
 body {
     background-color: #f6f6f6;
-    font-family: "Poetsen One", sans-serif;
+    font-family: 'Poetsen One', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -14,11 +14,16 @@ header {
 header nav ul {
     display: flex;
     justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li a {
     margin: 0 4rem;
-    color: #EEEEEE;
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 header nav ul li a:hover {
@@ -26,44 +31,80 @@ header nav ul li a:hover {
 }
 
 .Dragões {
-    margin: 2%;
+    margin: 2% auto;
+    max-width: 90%;
 }
 
 .Dragões__lista {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .Dragões__item {
     max-width: 20rem;
+    text-align: center;
 }
 
 img {
     width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
-.Dragões__informacoes h3 {
-    text-align: center;
-    font-size: 1.5rem;
+h3, p, h4 {
+    margin: 0.5rem 0;
 }
 
-.Dragões__informacoes p {
-    text-align: center;
+.atributo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.Dragões__informacoes h4 {
-    font-size: 1.5rem;
-}
-
-.Dragões__informacoes s {
-    font-size: 1rem;
+.valor {
+    font-weight: bold;
     color: red;
-    margin-left: 1.5rem;
+}
+
+.ocultar {
+    color: black;
+    font-style: italic;
+}
+
+.placar {
+    text-align: center;
+    margin: 1rem;
+    background-color: #222831;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #76aba6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #558c84;
 }
 
 footer {
     background-color: green;
+    color: white;
     padding: 1rem;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
